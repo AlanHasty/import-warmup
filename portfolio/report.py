@@ -1,3 +1,5 @@
+from portfolio.assets import make_asset
+
 def print_report(portfolio: list[dict]) -> None:
     total = calculate_portfolio_value(portfolio)
     print(f"PORTFOLIO SUMMARY\nPortfolio Name: {portfolio["name"]}")
