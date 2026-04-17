@@ -1,4 +1,4 @@
-import portfolio.metrics as metrics
+from portfolio.core.metrics import calculate_asset_value
 
 def make_asset(ticker: str, price: float, quantity: int) -> dict:
     return {
@@ -8,4 +8,4 @@ def make_asset(ticker: str, price: float, quantity: int) -> dict:
     }
 
 def get_asset_value(asset: dict) -> float:
-    return metrics.calculate_asset_value(asset)
+    return calculate_asset_value(asset)

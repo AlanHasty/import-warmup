@@ -1,4 +1,4 @@
-from portfolio.assets import make_asset
+from .core.assets import make_asset
 
 def create_portfolio(name: str) -> dict:
     return {

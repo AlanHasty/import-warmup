@@ -1,4 +1,4 @@
-from portfolio.assets import make_asset
+from portfolio.core.assets import make_asset
 
 def print_report(portfolio: list[dict]) -> None:
     total = calculate_portfolio_value(portfolio)
